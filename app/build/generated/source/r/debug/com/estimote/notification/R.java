@@ -2198,7 +2198,6 @@ containing a value of this type.
         public static final int notification_template_icon_bg=0x7f020047;
     }
     public static final class id {
-        public static final int Time=0x7f0c006b;
         public static final int action0=0x7f0c0074;
         public static final int action_bar=0x7f0c005a;
         public static final int action_bar_activity_content=0x7f0c0000;
@@ -2219,7 +2218,7 @@ containing a value of this type.
         public static final int always=0x7f0c0032;
         public static final int beginning=0x7f0c0030;
         public static final int bottom=0x7f0c001c;
-        public static final int button=0x7f0c006c;
+        public static final int button=0x7f0c006b;
         public static final int buttonPanel=0x7f0c0044;
         public static final int cancel_action=0x7f0c0075;
         public static final int center=0x7f0c001d;
@@ -2240,7 +2239,6 @@ containing a value of this type.
         public static final int design_menu_item_text=0x7f0c0071;
         public static final int design_navigation_view=0x7f0c0070;
         public static final int disableHome=0x7f0c000e;
-        public static final int editText2=0x7f0c006a;
         public static final int edit_query=0x7f0c005c;
         public static final int end=0x7f0c0020;
         public static final int end_padder=0x7f0c0080;
@@ -2318,10 +2316,12 @@ containing a value of this type.
         public static final int textSpacerNoButtons=0x7f0c004d;
         public static final int textView=0x7f0c0069;
         public static final int time=0x7f0c007a;
+        public static final int timePicker1=0x7f0c006a;
         public static final int title=0x7f0c0043;
         public static final int title_template=0x7f0c0048;
         public static final int top=0x7f0c0025;
         public static final int topPanel=0x7f0c0047;
+        public static final int tv=0x7f0c006c;
         public static final int up=0x7f0c0009;
         public static final int useLogo=0x7f0c0014;
         public static final int view_offset_helper=0x7f0c000a;
@@ -2416,12 +2416,13 @@ containing a value of this type.
         public static final int error_no_bluetooth_enabled=0x7f060017;
         public static final int error_no_bluetooth_le=0x7f060018;
         public static final int error_no_location_permission=0x7f060019;
-        public static final int requesting_location_access=0x7f06001a;
-        public static final int requesting_location_access_cancel=0x7f06001b;
-        public static final int requesting_location_access_ok=0x7f06001c;
-        public static final int requesting_location_access_rationale=0x7f06001d;
-        public static final int requesting_location_permission=0x7f06001e;
-        public static final int requesting_location_permission_rationale=0x7f06001f;
+        public static final int pick_time=0x7f06001a;
+        public static final int requesting_location_access=0x7f06001b;
+        public static final int requesting_location_access_cancel=0x7f06001c;
+        public static final int requesting_location_access_ok=0x7f06001d;
+        public static final int requesting_location_access_rationale=0x7f06001e;
+        public static final int requesting_location_permission=0x7f06001f;
+        public static final int requesting_location_permission_rationale=0x7f060020;
         public static final int status_bar_notification_info_overflow=0x7f060013;
     }
     public static final class style {

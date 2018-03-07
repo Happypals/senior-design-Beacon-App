@@ -552,7 +552,6 @@ int drawable abc_textfield_search_material 0x7f020044
 int drawable design_fab_background 0x7f020045
 int drawable design_snackbar_background 0x7f020046
 int drawable notification_template_icon_bg 0x7f020047
-int id Time 0x7f0c006b
 int id action0 0x7f0c0074
 int id action_bar 0x7f0c005a
 int id action_bar_activity_content 0x7f0c0000
@@ -573,7 +572,7 @@ int id alertTitle 0x7f0c0049
 int id always 0x7f0c0032
 int id beginning 0x7f0c0030
 int id bottom 0x7f0c001c
-int id button 0x7f0c006c
+int id button 0x7f0c006b
 int id buttonPanel 0x7f0c0044
 int id cancel_action 0x7f0c0075
 int id center 0x7f0c001d
@@ -594,7 +593,6 @@ int id design_menu_item_action_area_stub 0x7f0c0072
 int id design_menu_item_text 0x7f0c0071
 int id design_navigation_view 0x7f0c0070
 int id disableHome 0x7f0c000e
-int id editText2 0x7f0c006a
 int id edit_query 0x7f0c005c
 int id end 0x7f0c0020
 int id end_padder 0x7f0c0080
@@ -672,10 +670,12 @@ int id text2 0x7f0c007c
 int id textSpacerNoButtons 0x7f0c004d
 int id textView 0x7f0c0069
 int id time 0x7f0c007a
+int id timePicker1 0x7f0c006a
 int id title 0x7f0c0043
 int id title_template 0x7f0c0048
 int id top 0x7f0c0025
 int id topPanel 0x7f0c0047
+int id tv 0x7f0c006c
 int id up 0x7f0c0009
 int id useLogo 0x7f0c0014
 int id view_offset_helper 0x7f0c000a
@@ -762,12 +762,13 @@ int string character_counter_pattern 0x7f060016
 int string error_no_bluetooth_enabled 0x7f060017
 int string error_no_bluetooth_le 0x7f060018
 int string error_no_location_permission 0x7f060019
-int string requesting_location_access 0x7f06001a
-int string requesting_location_access_cancel 0x7f06001b
-int string requesting_location_access_ok 0x7f06001c
-int string requesting_location_access_rationale 0x7f06001d
-int string requesting_location_permission 0x7f06001e
-int string requesting_location_permission_rationale 0x7f06001f
+int string pick_time 0x7f06001a
+int string requesting_location_access 0x7f06001b
+int string requesting_location_access_cancel 0x7f06001c
+int string requesting_location_access_ok 0x7f06001d
+int string requesting_location_access_rationale 0x7f06001e
+int string requesting_location_permission 0x7f06001f
+int string requesting_location_permission_rationale 0x7f060020
 int string status_bar_notification_info_overflow 0x7f060013
 int style AlertDialog_AppCompat 0x7f09007e
 int style AlertDialog_AppCompat_Light 0x7f09007f

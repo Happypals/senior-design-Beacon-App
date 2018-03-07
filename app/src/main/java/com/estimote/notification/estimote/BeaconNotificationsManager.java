@@ -4,9 +4,10 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
-
+import java.lang.Math;
 import com.estimote.coresdk.recognition.packets.EstimoteLocation;
 import com.estimote.coresdk.service.BeaconManager;
 import com.estimote.monitoring.EstimoteMonitoring;
@@ -31,17 +32,17 @@ public class BeaconNotificationsManager {
     private Context context;
     private boolean withinTimeRange = false;
     private int notificationID = 0;
-    private Calendar calendar;
+    private Calendar calendar = Calendar.getInstance();
 
-    private int hour;
-    private int min;
+
     private static final int MINUTE_IN_HOUR = 60;
+    private SharedPreferences sp;
 
-    public BeaconNotificationsManager(Context context,  int setHour,  int setMin) {
+
+    public BeaconNotificationsManager(Context context) {
 
         this.context = context;
-        this.hour = setHour;
-        this.min = setMin;
+        this.sp = MainActivity.sp;
         beaconManager = new BeaconManager(context);
         estimoteMonitoring = new EstimoteMonitoring();
         estimoteMonitoring.setEstimoteMonitoringListener(new EstimoteMonitoringListener() {
@@ -52,9 +53,16 @@ public class BeaconNotificationsManager {
                 if (message != null) {
                     int curHour = calendar.get(Calendar.HOUR_OF_DAY);
                     int curMin = calendar.get(Calendar.MINUTE);
-
-                    int absolute_diff = MINUTE_IN_HOUR*(hour-curHour)+(min-curMin);
-                    if( absolute_diff > 10 ){
+                    int setHour = sp.getInt("preferred hour",10);
+                    int setMin = sp.getInt("preferred min",0);
+                    System.out.println("curHour: "+curHour);
+                    System.out.println("curMin: "+curMin);
+                    System.out.println("setHour: "+setHour);
+                    System.out.println("setMin: "+setMin);
+                    int absolute_diff = Math.abs(MINUTE_IN_HOUR*(setHour-curHour)+(setMin-curMin));
+                    System.out.println(absolute_diff);
+                    Log.v("test",Integer.toString(absolute_diff));
+                    if( absolute_diff < 10 ){
                         showNotification(message);
                     }
 
