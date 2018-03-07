@@ -3,21 +3,30 @@
 
     <item
         is-multidex="false"
+        jar="/Users/xizhouli/Downloads/Notification/app/build/intermediates/exploded-aar/com.estimote/cloud-plugin/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="bba3d4da5631523ae81be60e02c49ed9aa72c647">
+        <dex dex="/Users/xizhouli/Downloads/Notification/app/build/intermediates/pre-dexed/debug/com.estimote-cloud-plugin-0.1.0_73edd145ef69b3a560918255e632707c8a7d2d1d.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/xizhouli/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.2.0/41e67dba73c3347e4503761642c39d0e06ca1f2/retrofit-2.2.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.3"
         sha1="041e67dba73c3347e4503761642c39d0e06ca1f2">
-        <dex dex="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/pre-dexed/debug/retrofit-2.2.0_50dca5648bb4f901a639e1b9f9a3d1bd03e5f2fa.jar" />
+        <dex dex="/Users/xizhouli/Downloads/Notification/app/build/intermediates/pre-dexed/debug/retrofit-2.2.0_50dca5648bb4f901a639e1b9f9a3d1bd03e5f2fa.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/exploded-aar/com.estimote/management-sdk/0.1.0/jars/classes.jar"
+        jar="/Users/xizhouli/Downloads/Notification/app/build/intermediates/exploded-aar/com.estimote/sdk/1.2.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.3"
-        sha1="0a274aa570cdbcf7cb6da5678bda2cf38a7acb37">
-        <dex dex="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/pre-dexed/debug/com.estimote-management-sdk-0.1.0_24179ef82668badfb61c2eabbb3398e44bc041de.jar" />
+        sha1="e568a00213d0211100d9aa10c830ed7186007ed8">
+        <dex dex="/Users/xizhouli/Downloads/Notification/app/build/intermediates/pre-dexed/debug/com.estimote-sdk-1.2.0_24ce59644076ab2ea0dc4c9c26418d4e24feb89e.jar" />
     </item>
     <item
         is-multidex="false"
@@ -26,25 +35,16 @@
         optimize="true"
         revision="23.0.3"
         sha1="92e3fc113ec3ee36b64603a38857b95700025633">
-        <dex dex="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.0_0050cb62936953311bfe8e308a54502b26e5225b.jar" />
+        <dex dex="/Users/xizhouli/Downloads/Notification/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.0_0050cb62936953311bfe8e308a54502b26e5225b.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/xizhouli/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jar="/Users/xizhouli/Downloads/Notification/app/build/intermediates/exploded-aar/com.android.support/design/23.1.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.3"
-        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
-        <dex dex="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/pre-dexed/debug/okio-1.13.0_2d3e95306728cd392fb183c52c35b3694e1ef91a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/exploded-aar/com.estimote/cloud-plugin/0.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="bba3d4da5631523ae81be60e02c49ed9aa72c647">
-        <dex dex="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/pre-dexed/debug/com.estimote-cloud-plugin-0.1.0_f458b51fcb027f7cd4e05f5d2adbfb7c04d8308e.jar" />
+        sha1="19026d31f5d3ae868db81319671a642be5fbba08">
+        <dex dex="/Users/xizhouli/Downloads/Notification/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.1.0_c7ef84695279e5736239e136f740249aebd7f78d.jar" />
     </item>
     <item
         is-multidex="false"
@@ -53,88 +53,34 @@
         optimize="true"
         revision="23.0.3"
         sha1="a09926806199499a20b2f5168779499abfa33342">
-        <dex dex="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/pre-dexed/debug/converter-gson-2.2.0_f5e3254b82f74959df52f167b406f76c7bd27426.jar" />
+        <dex dex="/Users/xizhouli/Downloads/Notification/app/build/intermediates/pre-dexed/debug/converter-gson-2.2.0_f5e3254b82f74959df52f167b406f76c7bd27426.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/xizhouli/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger/2.9/75a739e59d7ede2f7f425f369955bdd1c2ac122b/dagger-2.9.jar"
+        jar="/Users/xizhouli/Downloads/Notification/app/build/intermediates/exploded-aar/com.estimote/internal-plugins-api/0.1.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.3"
-        sha1="75a739e59d7ede2f7f425f369955bdd1c2ac122b">
-        <dex dex="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/pre-dexed/debug/dagger-2.9_25745695aa90b13cf38e6a964b1b824beb4c5524.jar" />
+        sha1="a5aa951e5117887b4023264e9ab3ead950475600">
+        <dex dex="/Users/xizhouli/Downloads/Notification/app/build/intermediates/pre-dexed/debug/com.estimote-internal-plugins-api-0.1.0_a7d1699cbba5b79753a43c41eeb4a040da5b4296.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/libs/internal_impl-23.1.0.jar"
+        jar="/Users/xizhouli/Downloads/Notification/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/libs/internal_impl-23.1.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.3"
         sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
-        <dex dex="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.0_b9321602a6ecad0cee3c53547894416b5bada506.jar" />
+        <dex dex="/Users/xizhouli/Downloads/Notification/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.0_4440b9de8fb52c206e5ba6d0fa26e457264a147f.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/xizhouli/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.0/2fdf84dedcaaeabb9d70cde9dbb8aad4eccb80a1/rxjava-2.1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="2fdf84dedcaaeabb9d70cde9dbb8aad4eccb80a1">
-        <dex dex="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/pre-dexed/debug/rxjava-2.1.0_9844b1d54df12714074b602de53a70dcc76ca3b6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/xizhouli/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.8.0/5a11f020cce2d11eb71ba916700600e18c4547e7/okhttp-3.8.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="5a11f020cce2d11eb71ba916700600e18c4547e7">
-        <dex dex="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/pre-dexed/debug/okhttp-3.8.0_d501d4f529edaf70182307aa5311625758fe61cd.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.0/jars/classes.jar"
+        jar="/Users/xizhouli/Downloads/Notification/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.3"
         sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
-        <dex dex="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.1.0_587606a795d8e40f1bea4c7b3404e51e68190480.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/libs/monitoring.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="a35ff5c9f91f1acc2c246d008fb636b29c2c9e96">
-        <dex dex="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/pre-dexed/debug/monitoring_ca8fd58f302d5555bbacd317b681a39e25571be2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/exploded-aar/com.estimote/mgmtsdk/1.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="708a6b4b13d96912097c077dfd1ec285d5998c45">
-        <dex dex="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/pre-dexed/debug/com.estimote-mgmtsdk-1.2.0_626bb43c749a7c5d6a52c539b4a5eca4b958d5a9.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
-        <dex dex="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.1.0_d93cba8400ede7e1cafea456288df4628014edcf.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/xizhouli/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.0/14b8c877d98005ba3941c9257cfe09f6ed0e0d74/reactive-streams-1.0.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="14b8c877d98005ba3941c9257cfe09f6ed0e0d74">
-        <dex dex="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/pre-dexed/debug/reactive-streams-1.0.0_8a833ae95d0564e95facbc03bce1cc35350d7d3b.jar" />
+        <dex dex="/Users/xizhouli/Downloads/Notification/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.1.0_c8588382f7f9ff85bfbddaff09d84feb545af619.jar" />
     </item>
     <item
         is-multidex="false"
@@ -143,7 +89,115 @@
         optimize="true"
         revision="23.0.3"
         sha1="919f0dfe192fb4e063e7dacadee7f8bb9a2672a9">
-        <dex dex="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/pre-dexed/debug/annotations-13.0_898618c9f78ccd87301249fb43b7604bec2bcc5a.jar" />
+        <dex dex="/Users/xizhouli/Downloads/Notification/app/build/intermediates/pre-dexed/debug/annotations-13.0_898618c9f78ccd87301249fb43b7604bec2bcc5a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/xizhouli/Downloads/Notification/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="/Users/xizhouli/Downloads/Notification/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.1.0_3a4445770aa7fd9ccbd623efe3995192ed1af941.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/xizhouli/Downloads/Notification/app/libs/monitoring.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a35ff5c9f91f1acc2c246d008fb636b29c2c9e96">
+        <dex dex="/Users/xizhouli/Downloads/Notification/app/build/intermediates/pre-dexed/debug/monitoring_098ec3f223c8232f5ced6925a10d8b5fb96948a9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/xizhouli/Downloads/Notification/app/build/intermediates/exploded-aar/com.estimote/coresdk/1.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="04e1ecc69645a7e4f19fccfbdf3999c3841f668c">
+        <dex dex="/Users/xizhouli/Downloads/Notification/app/build/intermediates/pre-dexed/debug/com.estimote-coresdk-1.2.0_e770d4e1dcb01af5815b93b4d69add9071ab1827.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/xizhouli/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/Users/xizhouli/Downloads/Notification/app/build/intermediates/pre-dexed/debug/okio-1.13.0_2d3e95306728cd392fb183c52c35b3694e1ef91a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/xizhouli/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger/2.9/75a739e59d7ede2f7f425f369955bdd1c2ac122b/dagger-2.9.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="75a739e59d7ede2f7f425f369955bdd1c2ac122b">
+        <dex dex="/Users/xizhouli/Downloads/Notification/app/build/intermediates/pre-dexed/debug/dagger-2.9_25745695aa90b13cf38e6a964b1b824beb4c5524.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/xizhouli/Downloads/Notification/app/build/intermediates/exploded-aar/com.estimote/mgmtsdk/1.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="708a6b4b13d96912097c077dfd1ec285d5998c45">
+        <dex dex="/Users/xizhouli/Downloads/Notification/app/build/intermediates/pre-dexed/debug/com.estimote-mgmtsdk-1.2.0_d633aae770f1ade3685dcd5f4b35cce640cc7767.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/xizhouli/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.1.0/2fdf84dedcaaeabb9d70cde9dbb8aad4eccb80a1/rxjava-2.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="2fdf84dedcaaeabb9d70cde9dbb8aad4eccb80a1">
+        <dex dex="/Users/xizhouli/Downloads/Notification/app/build/intermediates/pre-dexed/debug/rxjava-2.1.0_9844b1d54df12714074b602de53a70dcc76ca3b6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/xizhouli/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.8.0/5a11f020cce2d11eb71ba916700600e18c4547e7/okhttp-3.8.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="5a11f020cce2d11eb71ba916700600e18c4547e7">
+        <dex dex="/Users/xizhouli/Downloads/Notification/app/build/intermediates/pre-dexed/debug/okhttp-3.8.0_d501d4f529edaf70182307aa5311625758fe61cd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/xizhouli/Downloads/Notification/app/build/intermediates/exploded-aar/com.estimote/management-sdk/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="0a274aa570cdbcf7cb6da5678bda2cf38a7acb37">
+        <dex dex="/Users/xizhouli/Downloads/Notification/app/build/intermediates/pre-dexed/debug/com.estimote-management-sdk-0.1.0_28eaff4d4427aabac5e519472f7b5a956f98693c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/xizhouli/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.0/14b8c877d98005ba3941c9257cfe09f6ed0e0d74/reactive-streams-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="14b8c877d98005ba3941c9257cfe09f6ed0e0d74">
+        <dex dex="/Users/xizhouli/Downloads/Notification/app/build/intermediates/pre-dexed/debug/reactive-streams-1.0.0_8a833ae95d0564e95facbc03bce1cc35350d7d3b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/xizhouli/Downloads/Notification/app/build/intermediates/exploded-aar/io.reactivex.rxjava2/rxandroid/2.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4119ea97a7191ff9b8f33b534ea220448f62f491">
+        <dex dex="/Users/xizhouli/Downloads/Notification/app/build/intermediates/pre-dexed/debug/io.reactivex.rxjava2-rxandroid-2.0.1_370156a02dde4721ce9edc7cc02f2ef68fb4b183.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/xizhouli/Downloads/Notification/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
+        <dex dex="/Users/xizhouli/Downloads/Notification/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.1.0_08d74ea578c7b772a173f76bad8438340bd645f0.jar" />
     </item>
     <item
         is-multidex="false"
@@ -152,34 +206,7 @@
         optimize="true"
         revision="23.0.3"
         sha1="e117362a2103f8ec01091ebd2f40aca4e1ada599">
-        <dex dex="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/pre-dexed/debug/retrofit2-rxjava2-adapter-1.0.0_c5ce988bc8856cec4dd3d93ad259b2090a380687.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/exploded-aar/com.android.support/design/23.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="19026d31f5d3ae868db81319671a642be5fbba08">
-        <dex dex="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.1.0_0b9fc940920dec3ed8a1102b9d6b903ceda0b4a2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="57ae0d750ff83f0c738d21720224ac7ea866a094">
-        <dex dex="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.1.0_fca2f2f4f200ec17941625c3cdd17a87c9cf610a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/exploded-aar/io.reactivex.rxjava2/rxandroid/2.0.1/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="4119ea97a7191ff9b8f33b534ea220448f62f491">
-        <dex dex="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/pre-dexed/debug/io.reactivex.rxjava2-rxandroid-2.0.1_3076e566e840ab0bf55729f1587c38ba8f0ab423.jar" />
+        <dex dex="/Users/xizhouli/Downloads/Notification/app/build/intermediates/pre-dexed/debug/retrofit2-rxjava2-adapter-1.0.0_c5ce988bc8856cec4dd3d93ad259b2090a380687.jar" />
     </item>
     <item
         is-multidex="false"
@@ -188,34 +215,7 @@
         optimize="true"
         revision="23.0.3"
         sha1="6975da39a7040257bd51d21a231b76c915872d38">
-        <dex dex="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/pre-dexed/debug/javax.inject-1_1f8216cbb01a6ab38e9bb2ab3a4d9866c0db2dae.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/exploded-aar/com.estimote/coresdk/1.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="04e1ecc69645a7e4f19fccfbdf3999c3841f668c">
-        <dex dex="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/pre-dexed/debug/com.estimote-coresdk-1.2.0_10c442f7fb2ed19fc2d13a76759831aced0ffee8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/exploded-aar/com.estimote/sdk/1.2.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="e568a00213d0211100d9aa10c830ed7186007ed8">
-        <dex dex="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/pre-dexed/debug/com.estimote-sdk-1.2.0_e4f5974390ec1bc48df9642db8b1853cca5a7d2e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/exploded-aar/com.estimote/internal-plugins-api/0.1.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="a5aa951e5117887b4023264e9ab3ead950475600">
-        <dex dex="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/pre-dexed/debug/com.estimote-internal-plugins-api-0.1.0_8689d6a9d645900412a0c02a25118fda080c0529.jar" />
+        <dex dex="/Users/xizhouli/Downloads/Notification/app/build/intermediates/pre-dexed/debug/javax.inject-1_1f8216cbb01a6ab38e9bb2ab3a4d9866c0db2dae.jar" />
     </item>
     <item
         is-multidex="false"
@@ -224,7 +224,7 @@
         optimize="true"
         revision="23.0.3"
         sha1="0f765f004f3e201bd6ad0904266e605d7fb776d5">
-        <dex dex="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/pre-dexed/debug/logging-interceptor-3.8.0_75bdbd55da0f654f062b0dcfb325513bceac6d1c.jar" />
+        <dex dex="/Users/xizhouli/Downloads/Notification/app/build/intermediates/pre-dexed/debug/logging-interceptor-3.8.0_75bdbd55da0f654f062b0dcfb325513bceac6d1c.jar" />
     </item>
     <item
         is-multidex="false"
@@ -233,7 +233,7 @@
         optimize="true"
         revision="23.0.3"
         sha1="8360677e3d1b9bc9716efead9a4e740c428da2ff">
-        <dex dex="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/pre-dexed/debug/kotlin-stdlib-jre7-1.1.2-3_de447dcedfc6116d3151719a8bb1560e381fc950.jar" />
+        <dex dex="/Users/xizhouli/Downloads/Notification/app/build/intermediates/pre-dexed/debug/kotlin-stdlib-jre7-1.1.2-3_de447dcedfc6116d3151719a8bb1560e381fc950.jar" />
     </item>
     <item
         is-multidex="false"
@@ -242,7 +242,7 @@
         optimize="true"
         revision="23.0.3"
         sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
-        <dex dex="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/pre-dexed/debug/gson-2.7_877f66e20dcf128417fbbbfa66afdb793c7b1af8.jar" />
+        <dex dex="/Users/xizhouli/Downloads/Notification/app/build/intermediates/pre-dexed/debug/gson-2.7_877f66e20dcf128417fbbbfa66afdb793c7b1af8.jar" />
     </item>
     <item
         is-multidex="false"
@@ -251,7 +251,7 @@
         optimize="true"
         revision="23.0.3"
         sha1="552a40eb47669b78f0f194d526cb21b3aa1f8319">
-        <dex dex="/Users/xizhouli/Downloads/DotaliOutlookComSNotif07Y/app/build/intermediates/pre-dexed/debug/kotlin-stdlib-1.1.2-3_002d7bcc83af4800d136d064a1164d36bb24f605.jar" />
+        <dex dex="/Users/xizhouli/Downloads/Notification/app/build/intermediates/pre-dexed/debug/kotlin-stdlib-1.1.2-3_002d7bcc83af4800d136d064a1164d36bb24f605.jar" />
     </item>
 
 </items>

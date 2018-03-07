@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Notification</string>
+    <string name="pick_time">Time Picker</string>
 </resources>

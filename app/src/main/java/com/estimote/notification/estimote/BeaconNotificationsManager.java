@@ -14,6 +14,7 @@ import com.estimote.monitoring.EstimoteMonitoringListener;
 import com.estimote.monitoring.EstimoteMonitoringPacket;
 import com.estimote.notification.MainActivity;
 
+import java.util.Calendar;
 import java.util.List;
 
 public class BeaconNotificationsManager {
@@ -28,11 +29,19 @@ public class BeaconNotificationsManager {
     private String deviceId;
 
     private Context context;
-
+    private boolean withinTimeRange = false;
     private int notificationID = 0;
+    private Calendar calendar;
 
-    public BeaconNotificationsManager(Context context) {
+    private int hour;
+    private int min;
+    private static final int MINUTE_IN_HOUR = 60;
+
+    public BeaconNotificationsManager(Context context,  int setHour,  int setMin) {
+
         this.context = context;
+        this.hour = setHour;
+        this.min = setMin;
         beaconManager = new BeaconManager(context);
         estimoteMonitoring = new EstimoteMonitoring();
         estimoteMonitoring.setEstimoteMonitoringListener(new EstimoteMonitoringListener() {
@@ -41,7 +50,14 @@ public class BeaconNotificationsManager {
                 Log.d(TAG, "onEnteredRegion");
                 String message = enterMessages;
                 if (message != null) {
-                    showNotification(message);
+                    int curHour = calendar.get(Calendar.HOUR_OF_DAY);
+                    int curMin = calendar.get(Calendar.MINUTE);
+
+                    int absolute_diff = MINUTE_IN_HOUR*(hour-curHour)+(min-curMin);
+                    if( absolute_diff > 10 ){
+                        showNotification(message);
+                    }
+
                 }
             }
 

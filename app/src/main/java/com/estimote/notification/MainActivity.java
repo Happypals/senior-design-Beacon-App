@@ -1,16 +1,16 @@
 package com.estimote.notification;
 
+
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
+
 
 import com.estimote.coresdk.common.requirements.SystemRequirementsChecker;
 
-import java.util.Date;
-import java.util.Timer;
+
+import android.widget.TimePicker;
+
 
 //
 // Running into any issues? Drop us an email to: contact@estimote.com
@@ -19,26 +19,23 @@ import java.util.Timer;
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
-    private static Timer timer = new Timer("rest");
-    private static boolean toggleRemind = false;
-    private static Button button;
-    private static CharSequence seq;
-    private static TextView timerView;
-    private static Date dateTime;
+    private TimePicker timepciker;
+    private int setHour;
+    private int setMin;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        timerView = (TextView) this.findViewById(R.id.Time);
+        timepciker = (TimePicker) this.findViewById(R.id.timePicker1);
 
-        button = (Button) this.findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                seq = timerView.getText();
+        setHour = timepciker.getCurrentHour();
+        setMin = timepciker.getCurrentMinute();
 
-            }
-        });
+
+
     }
 
     @Override
@@ -53,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
             Log.e(TAG, "If this is fixable, you should see a popup on the app's screen right now, asking to enable what's necessary");
         } else if (!app.isBeaconNotificationsEnabled()) {
             Log.d(TAG, "Enabling beacon notifications");
-            app.enableBeaconNotifications();
+            app.enableBeaconNotifications(setHour, setMin);
         }
     }
 }

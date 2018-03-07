@@ -26,19 +26,15 @@ public class MyApplication extends Application {
         // it's usually only a good idea when troubleshooting issues with the Estimote SDK
 //        EstimoteSDK.enableDebugLogging(true);
     }
-    public void getTime(View v){
-
-    }
-    public void enableBeaconNotifications() {
+    public void enableBeaconNotifications(int hour, int min) {
         if (beaconNotificationsEnabled) { return; }
 
-        BeaconNotificationsManager beaconNotificationsManager = new BeaconNotificationsManager(this);
+        BeaconNotificationsManager beaconNotificationsManager = new BeaconNotificationsManager(this,hour,min);
         beaconNotificationsManager.addNotification(
                 "d0995e7d651deea96ee42cbd5d09ca3d",
-                "Hello, world.",
-                "Goodbye, world.");
+                "You need to take your medcine now",
+                "");
         beaconNotificationsManager.startMonitoring();
-
         beaconNotificationsEnabled = true;
     }
 
