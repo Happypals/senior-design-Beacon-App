@@ -274,6 +274,8 @@
     <string name="error_no_bluetooth_enabled">To use this app you need to turn on Bluetooth</string>
     <string name="error_no_bluetooth_le">This device does not support Bluetooth Low Energy</string>
     <string name="error_no_location_permission">To use this app you need to grant location permission</string>
+    <string name="off">off</string>
+    <string name="on">on</string>
     <string name="pick_time">Time Picker</string>
     <string name="requesting_location_access">Requesting location access</string>
     <string name="requesting_location_access_cancel">I don\'t want to do this now</string>

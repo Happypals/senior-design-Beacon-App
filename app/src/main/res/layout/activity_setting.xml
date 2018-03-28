@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.02"
+        >
+
+        <TextView
+            android:text="Location/name:"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:id="@+id/location_text"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:inputType="textPersonName"
+            android:text="Bedroom"
+            android:textSize="18dp"
+            android:textStyle="italic"
+            android:ems="10"
+            android:id="@+id/location_edit"
+            android:gravity="center"
+            android:layout_alignTop="@+id/location_text"
+            android:layout_toEndOf="@+id/location_text"
+            android:backgroundTint="#fff"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.02"
+        >
+
+        <TextView
+            android:text="Message:"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="50dp"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:id="@+id/message_text"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:inputType="textMultiLine"
+            android:text="Take your medicine right now"
+            android:textSize="18dp"
+            android:textStyle="italic"
+            android:ems="10"
+            android:id="@+id/message_edit"
+
+            android:gravity="center"
+            android:backgroundTint="#fff"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/message_text" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03"
+        >
+
+        <Button
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancel"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="15dp" />
+
+        <Button
+            android:text="Save Settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginStart="146dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/save" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.13"
+        >
+
+        <TextView
+            android:text="reminderTime:"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/textView3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:text="10:00"
+            android:ems="10"
+            android:gravity="center"
+
+            android:layout_alignParentEnd="true"
+            android:id="@+id/reminder_edit"
+            android:backgroundTint="#fff"
+            android:layout_alignTop="@+id/textView3" />
+
+        <Button
+            android:text="Set Reminder Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reminder_edit"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/setReminderTime"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

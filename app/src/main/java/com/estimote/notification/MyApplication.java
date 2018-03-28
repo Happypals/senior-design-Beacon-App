@@ -1,9 +1,8 @@
 package com.estimote.notification;
 
 import android.app.Application;
-import android.view.View;
+import android.content.Context;
 
-import com.estimote.notification.estimote.BeaconNotificationsManager;
 import com.estimote.coresdk.common.config.EstimoteSDK;
 
 //
@@ -26,17 +25,32 @@ public class MyApplication extends Application {
         // it's usually only a good idea when troubleshooting issues with the Estimote SDK
 //        EstimoteSDK.enableDebugLogging(true);
     }
-    public void enableBeaconNotifications() {
-        if (beaconNotificationsEnabled) { return; }
 
-        BeaconNotificationsManager beaconNotificationsManager = new BeaconNotificationsManager(this);
+    public BeaconNotificationsManager createBeaconManager(String id, String message, int hour, int min){
+        BeaconNotificationsManager beaconNotificationsManager = new BeaconNotificationsManager(this,hour,min);
         beaconNotificationsManager.addNotification(
-                "d0995e7d651deea96ee42cbd5d09ca3d",
-                "You need to take your medcine now",
-                null);
-        beaconNotificationsManager.startMonitoring();
-        beaconNotificationsEnabled = true;
+                id,
+                message,
+                null
+                );
+        beaconNotificationsManager.setMonitoringStatus(true);
+
+        return beaconNotificationsManager;
     }
+
+    public void enableBeaconNotifications(BeaconNotificationsManager manager) {
+
+            manager.startMonitoring();
+
+    }
+
+    public void disableBeaconNotifications(BeaconNotificationsManager manager){
+
+            manager.stopMonitoring();
+
+
+    }
+
 
     public boolean isBeaconNotificationsEnabled() {
         return beaconNotificationsEnabled;

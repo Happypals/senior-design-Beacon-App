@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        >
+
+        <ImageView
+            android:layout_width="102dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mint_large"
+
+            android:id="@+id/imageView"
+            android:layout_weight="1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="bathroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="36dp"
+            android:id="@+id/textView2" />
+
+        <Switch
+            android:showText="true"
+            android:textOff="@string/off"
+            android:textOn="@string/on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:layout_marginStart="20dp"
+            android:id="@+id/switch1"
+            android:layout_below="@+id/textView2"
+            android:layout_toEndOf="@+id/imageView" />
+
+        <Button
+            android:text="setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:id="@+id/set1"
+            android:layout_alignBaseline="@+id/switch1"
+            android:layout_alignBottom="@+id/switch1"
+            android:layout_toEndOf="@+id/switch1" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        >
+
+
+        <ImageView
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ice_large"
+        android:id="@+id/imageView3"
+        android:layout_weight="1" />
+
+        <TextView
+            android:text="bedroom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageView3"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="36dp"
+            android:id="@+id/textView4" />
+        <Switch
+            android:showText="true"
+            android:textOff="@string/off"
+            android:textOn="@string/on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:layout_toEndOf="@+id/imageView3"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="21dp"
+            android:id="@+id/switch2" />
+
+        <Button
+            android:text="setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/set2"
+            android:layout_alignBaseline="@+id/switch2"
+            android:layout_alignBottom="@+id/switch2"
+            android:layout_toEndOf="@+id/switch2"
+            android:layout_marginStart="30dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        >
+
+
+        <ImageView
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blueberry_large"
+        android:id="@+id/imageView2"
+        android:layout_weight="1" />
+
+        <Switch
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView5"
+            android:layout_toEndOf="@+id/imageView2"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="21dp"
+            android:id="@+id/switch3"
+            android:showText="true"
+            android:textOff="@string/off"
+            android:textOn="@string/on"/>
+
+        <Button
+            android:text="setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/set3"
+            android:layout_alignBaseline="@+id/switch3"
+            android:layout_alignBottom="@+id/switch3"
+            android:layout_toEndOf="@+id/switch3"
+            android:layout_marginStart="30dp" />
+
+        <TextView
+            android:text="kitchen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:id="@+id/textView5"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/switch3" />
+    </RelativeLayout>
+
+
+</LinearLayout>

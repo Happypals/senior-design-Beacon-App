@@ -2,6 +2,7 @@ package com.estimote.notification;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -23,7 +24,7 @@ import android.widget.TimePicker;
 
 public class MainActivity extends AppCompatActivity {
     private static final String MyPREFERENCES = "MyPrefs" ;
-    private static final String TAG = "MainActivity";
+
     private TimePicker timepciker;
     private int setHour;
     private int setMin;
@@ -32,16 +33,21 @@ public class MainActivity extends AppCompatActivity {
     public static SharedPreferences sp;
     private int prefHour;
     private int prefMin;
+    private String number;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Intent i = getIntent();
+        number = i.getStringExtra("number");
         timepciker = (TimePicker) this.findViewById(R.id.timePicker1);
         textView = (TextView) this.findViewById(R.id.tv);
         sp = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
-        prefHour = sp.getInt("preferred hour",10);
-        prefMin = sp.getInt("preferred min", 0);
-        textView.setText(new StringBuilder(Integer.toString(prefHour))+":"+new StringBuilder(Integer.toString(prefMin)));
+        prefHour = sp.getInt("preferred hour"+number,10);
+        prefMin = sp.getInt("preferred min"+number, 0);
+        String prefMinStr = (prefMin > 9 )?Integer.toString(prefMin):"0"+Integer.toString(prefMin);
+        String prefHourStr=(prefHour > 9 )?Integer.toString(prefHour):"0"+Integer.toString(prefHour);
+        textView.setText(prefHourStr+":"+prefMinStr);
         button = (Button) this.findViewById(R.id.button);
 
 
@@ -51,29 +57,25 @@ public class MainActivity extends AppCompatActivity {
                 setHour = timepciker.getCurrentHour();
                 setMin = timepciker.getCurrentMinute();
                 SharedPreferences.Editor editor = sp.edit();
-                editor.putInt("preferred hour",setHour);
-                editor.putInt("preferred min", setMin);
+                editor.putInt("preferred hour"+number,setHour);
+                editor.putInt("preferred min"+number, setMin);
                 editor.commit();
                 textView.setText( new StringBuilder(Integer.toString(setHour))+":"+new StringBuilder(Integer.toString(setMin)));
+                clickOnSet(v);
 
             }
         });
 
 
+
+
+
+    }
+    public void clickOnSet(View v){
+        Intent intent = new Intent(this, Activity_setting.class);
+        intent.putExtra("number",number);
+        startActivity(intent);
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        MyApplication app = (MyApplication) getApplication();
 
-        if (!SystemRequirementsChecker.checkWithDefaultDialogs(this)) {
-            Log.e(TAG, "Can't scan for beacons, some pre-conditions were not met");
-            Log.e(TAG, "Read more about what's required at: http://estimote.github.io/Android-SDK/JavaDocs/com/estimote/sdk/SystemRequirementsChecker.html");
-            Log.e(TAG, "If this is fixable, you should see a popup on the app's screen right now, asking to enable what's necessary");
-        } else if (!app.isBeaconNotificationsEnabled()) {
-            Log.d(TAG, "Enabling beacon notifications");
-            app.enableBeaconNotifications();
-        }
-    }
 }

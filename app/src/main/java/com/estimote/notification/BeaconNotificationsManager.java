@@ -1,4 +1,4 @@
-package com.estimote.notification.estimote;
+package com.estimote.notification;
 
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -13,10 +13,10 @@ import com.estimote.coresdk.service.BeaconManager;
 import com.estimote.monitoring.EstimoteMonitoring;
 import com.estimote.monitoring.EstimoteMonitoringListener;
 import com.estimote.monitoring.EstimoteMonitoringPacket;
-import com.estimote.notification.MainActivity;
 
 import java.util.Calendar;
 import java.util.List;
+
 
 public class BeaconNotificationsManager {
 
@@ -24,7 +24,7 @@ public class BeaconNotificationsManager {
 
     private BeaconManager beaconManager;
     private EstimoteMonitoring estimoteMonitoring;
-
+    private boolean monitoring;
     private String enterMessages;
     private String exitMessages;
     private String deviceId;
@@ -35,14 +35,15 @@ public class BeaconNotificationsManager {
     private Calendar calendar = Calendar.getInstance();
 
 
+
     private static final int MINUTE_IN_HOUR = 60;
-    private SharedPreferences sp;
 
 
-    public BeaconNotificationsManager(Context context) {
+
+    public BeaconNotificationsManager(Context context, final int hour, final int min) {
 
         this.context = context;
-        this.sp = MainActivity.sp;
+
         beaconManager = new BeaconManager(context);
         estimoteMonitoring = new EstimoteMonitoring();
         estimoteMonitoring.setEstimoteMonitoringListener(new EstimoteMonitoringListener() {
@@ -53,12 +54,13 @@ public class BeaconNotificationsManager {
                 if (message != null) {
                     int curHour = calendar.get(Calendar.HOUR_OF_DAY);
                     int curMin = calendar.get(Calendar.MINUTE);
-                    int setHour = sp.getInt("preferred hour",10);
-                    int setMin = sp.getInt("preferred min",0);
+                    int setHour = hour;
+                    int setMin = min;
                     System.out.println("curHour: "+curHour);
                     System.out.println("curMin: "+curMin);
                     System.out.println("setHour: "+setHour);
                     System.out.println("setMin: "+setMin);
+
                     int absolute_diff = Math.abs(MINUTE_IN_HOUR*(setHour-curHour)+(setMin-curMin));
                     System.out.println(absolute_diff);
                     Log.v("test",Integer.toString(absolute_diff));
@@ -91,10 +93,17 @@ public class BeaconNotificationsManager {
         });
     }
 
+    public void setMonitoringStatus(boolean val){
+        this.monitoring = val;
+    }
+    public boolean getMonitoringStatus(){
+        return this.monitoring;
+    }
     public void addNotification(String deviceId, String enterMessage, String exitMessage) {
         this.deviceId = deviceId;
         enterMessages = enterMessage;
         exitMessages = exitMessage;
+
     }
 
     public void startMonitoring() {
@@ -104,10 +113,21 @@ public class BeaconNotificationsManager {
                 beaconManager.startLocationDiscovery();
             }
         });
+        setMonitoringStatus(true);
+    }
+
+    public void stopMonitoring(){
+        beaconManager.connect(new BeaconManager.ServiceReadyCallback() {
+            @Override
+            public void onServiceReady() {
+                beaconManager.stopLocationDiscovery();
+            }
+        });
+        setMonitoringStatus(false);
     }
 
     private void showNotification(String message) {
-        Intent resultIntent = new Intent(context, MainActivity.class);
+        Intent resultIntent = new Intent(context, Activity_home.class);
         PendingIntent resultPendingIntent = PendingIntent.getActivity(
                 context, 0, resultIntent, PendingIntent.FLAG_UPDATE_CURRENT);
 
