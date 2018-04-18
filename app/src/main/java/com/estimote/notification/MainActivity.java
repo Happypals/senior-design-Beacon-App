@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 setHour = timepciker.getCurrentHour();
                 setMin = timepciker.getCurrentMinute();
                 SharedPreferences.Editor editor = sp.edit();
+
                 editor.putInt("preferred hour"+number,setHour);
                 editor.putInt("preferred min"+number, setMin);
                 editor.commit();

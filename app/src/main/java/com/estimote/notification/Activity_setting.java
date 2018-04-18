@@ -79,7 +79,6 @@ public class Activity_setting extends AppCompatActivity {
 
     public void clickOnSave(View v){
         SharedPreferences.Editor editor = sp.edit();
-        editor.clear();
         editor.putString("beaconName"+number,locationEdit.getText().toString());
         editor.putString("beaconMessage"+number, messageEdit.getText().toString());
         editor.commit();

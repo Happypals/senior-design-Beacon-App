@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -42,15 +43,17 @@ public class Activity_home extends AppCompatActivity {
     private static final String ID_3 = "d0995e7d651deea96ee42cbd5d09ca3d";
 
 
-    public void onCreate(Bundle savedInstanceState){
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
         set1 = (Button) this.findViewById(R.id.set1);
         set2 = (Button) this.findViewById(R.id.set2);
         set3 = (Button) this.findViewById(R.id.set3);
         switch1 = (Switch) this.findViewById(R.id.switch1);
         switch2 = (Switch) this.findViewById(R.id.switch2);
         switch3 = (Switch) this.findViewById(R.id.switch3);
+
         sp = getSharedPreferences(MyPrefs, Context.MODE_PRIVATE);
 
 
@@ -58,9 +61,9 @@ public class Activity_home extends AppCompatActivity {
         tv2 = (TextView) findViewById(R.id.textView4);
         tv3 = (TextView) findViewById(R.id.textView5);
 
-        tv1.setText(sp.getString("beaconName1","bathroom"));
-        tv2.setText(sp.getString("beaconName2","bedroom"));
-        tv3.setText(sp.getString("beaconName3","kitchen"));
+        tv1.setText(sp.getString("beaconName1", "bathroom"));
+        tv2.setText(sp.getString("beaconName2", "bedroom"));
+        tv3.setText(sp.getString("beaconName3", "kitchen"));
 
         set1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -80,6 +83,11 @@ public class Activity_home extends AppCompatActivity {
                 clickOnSet3(v);
             }
         });
+
+        switch1.setChecked(sp.getBoolean("BeaconOn1", true));
+        switch2.setChecked(sp.getBoolean("BeaconOn2", true));
+        switch3.setChecked(sp.getBoolean("BeaconOn3", true));
+
     }
 
     public void clickOnSet1(View v){
@@ -104,6 +112,7 @@ public class Activity_home extends AppCompatActivity {
     }
     @Override
     protected void onResume() {
+
         super.onResume();
         final MyApplication app = (MyApplication) getApplication();
 
@@ -120,34 +129,46 @@ public class Activity_home extends AppCompatActivity {
             switch1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                 @Override
                 public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
                     if(isChecked){
                         app.enableBeaconNotifications(manager1);
                     }else{
                         app.disableBeaconNotifications(manager2);
                     }
+                    SharedPreferences.Editor editor = sp.edit();
+
+                    editor.putBoolean("BeaconOn1",isChecked);
+                    editor.commit();
                 }
             });
 
             switch2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                 @Override
                 public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
                     if(isChecked){
-                        System.out.println("hello");
                         app.enableBeaconNotifications(manager2);
                     }else{
                         app.disableBeaconNotifications(manager2);
                     }
+                    SharedPreferences.Editor editor = sp.edit();
+                    editor.putBoolean("BeaconOn2",isChecked);
+                    editor.commit();
                 }
             });
 
             switch3.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                 @Override
                 public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
                     if(isChecked){
                         app.enableBeaconNotifications(manager3);
                     }else{
                         app.disableBeaconNotifications(manager3);
                     }
+                    SharedPreferences.Editor editor = sp.edit();
+                    editor.putBoolean("BeaconOn3",isChecked);
+                    editor.commit();
                 }
             });
 
